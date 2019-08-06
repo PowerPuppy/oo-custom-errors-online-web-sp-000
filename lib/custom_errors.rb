@@ -1,4 +1,7 @@
 class Person
+
+  class PartnerError < StandardError
+  end
   attr_accessor :partner, :name
 
   def initialize(name)
@@ -13,8 +16,7 @@ class Person
 end
 
 
-class PartnerError < StandardError
-end
+
 
 
 beyonce = Person.new("Beyonce")
